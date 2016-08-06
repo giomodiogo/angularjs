@@ -1,3 +1,4 @@
+Example using angularjs, angular-route.
 #To configure:
   1. npm install
   2. npm install -g lite-server
