@@ -1,0 +1,62 @@
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Template</h1>
+</header>
+
+<nav>
+  <ul>
+    <a href="#/home" class="btn">Home</a><br>
+    <a href="#/view1" class="btn">View 1</a><br>
+    <a href="#/view2" class="btn">View 2</a><br>
+    <a href="#" onclick="logout()" class="btn">Sair</a><br>
+  </ul>
+</nav>
+
+<article>
+  <ng-view></ng-view>
+</article>
+
+<footer>Template</footer>
+</div>
